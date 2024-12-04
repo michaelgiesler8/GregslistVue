@@ -4,6 +4,8 @@ import { housesService } from '../services/HousesService';
 import Pop from '../utils/Pop';
 import { AppState } from '../AppState';
 import { computed } from 'vue';
+import HouseForm from '../components/HouseForm.vue';
+import HouseCard from '../components/HouseCard.vue';
 
 const houses = computed(() => AppState.houses)
 const account = computed(() => AppState.account)
