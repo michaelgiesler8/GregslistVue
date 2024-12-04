@@ -1,9 +1,8 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import { housesService } from '../services/HousesService';
 import Pop from '../utils/Pop';
 import { AppState } from '../AppState';
-import { computed } from 'vue';
 import HouseForm from '../components/HouseForm.vue';
 import HouseCard from '../components/HouseCard.vue';
 
@@ -44,7 +43,7 @@ onMounted(async () => {
     </section>
 
     <section class="row g-4">
-      <div v-for="house in houses" :key="house-id" class="col-md-4 mb-3">
+      <div v-for="house in houses" :key="house.id" class="col-md-4 mb-3">
         <HouseCard :houseProp="house" />
       </div>
     </section>
