@@ -16,6 +16,9 @@
           <router-link :to="{ name: 'Cars' }">
             <button class="btn btn-success">Cars 🚗</button>
           </router-link>
+          <router-link :to="{ name: 'Houses' }" class="btn btn-success">
+            Houses 🏘️
+          </router-link>
         </div>
       </div>
     </section>
